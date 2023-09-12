@@ -9,6 +9,8 @@ const app = express()
 app.use(cors)
 app.use(express.json())
 
-app.listen(process.env.APP_PORT, ()=> {
-    console.log(`Server running at http://localhost:${process.env.APP_PORT}`)
+let port = process.env.APP_PORT ?? 3000
+
+app.listen(port, ()=> {
+    console.log(`Server running at http://localhost:${port}`)
 })
