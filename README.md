@@ -2,8 +2,8 @@
 ```
 npm i
 ```
-create a .env file
-## File Content:
+
+## create .env file:
 ```
 APP_PORT= {{your port}}
 ```
